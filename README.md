@@ -20,7 +20,7 @@ Conditions considered
 
 1) Email and password validation should be done by javascript
 
-2) Entering the password as "SmartServTest@123" will redirect the user to a dashboard page
+2) Entering the password as "SmartServTest@123" will redirect the user to a dashboard page else it alert the users by saying Incorrect password!!.
 
 3) Clicking on the Forgot your password link will open an email client to send an email to support@smartserv.io for resetting the password.
 

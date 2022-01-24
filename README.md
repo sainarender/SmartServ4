@@ -1,4 +1,4 @@
-# SmartServ Technical Coding Assignment (Task3 and TASK-4)
+# SmartServ Technical Coding Assignment (Task-3 and Task-4)
 
 
 ---->>>Created a basic frontend of a SmartServ login dashboard using HTML,CSS and JavaScript

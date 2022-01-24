@@ -1,7 +1,9 @@
 # SmartServ Technical Coding Assignment (Task3 and TASK-4)
 
 
-Created a basic frontend of a SmartServ login dashboard using HTML,CSS and JavaScript
+---->>>Created a basic frontend of a SmartServ login dashboard using HTML,CSS and JavaScript
+
+---->>>I was facing some issued when I was uploading java script file,it was not able to upload so I have written the javascript code in html itself wherever it required
 
 For Users
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -29,4 +31,4 @@ https://sainarender.github.io/SmartServ4/
 
 This is the link for the assignment(Task-3 and Task-4)
 
-I was facing some issued when I was uploading java script file,it was not able to upload so I have written the javascript code in html itself wherever it required
+

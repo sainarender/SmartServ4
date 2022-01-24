@@ -3,7 +3,7 @@
 
 ---->>>Created a basic frontend of a SmartServ login dashboard using HTML,CSS and JavaScript
 
----->>>I was facing some issued when I was uploading java script file,it was not able to upload so I have written the javascript code in html itself wherever it required
+---->>>I was facing some issues while uploading the java script file,it was not able to upload so I have written the javascript code in html itself wherever it required
 
 For Users
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,58 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+    background-color: #775a5a3b;
+   
+}
+.cards{
+    padding: 22px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
+    
+}
+.graphs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 22px;
+    grid-gap: 2rem;
+    margin-top: 1rem;
+}
+.card-single{
+    padding-top: 0px;
+    padding-bottom: 2px;
+    padding-left: 15px;
+    background-color: #fff;
+    border-radius: 2px;
+    max-height: 10;
+    height: 80%;
+    border: solid 8px white;
+    border-left-color: rgb(18, 163, 18);
+    font-size: 12px;
+    
+}
+
+
+h1{
+    font-weight:lighter;
+    font-size: 15px;
+}
+h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 22px;
+}
+
+.barchart{
+        float: left;
+        width: 80%;
+        padding: 2px 00px 0px -60px;
+        height: 400px;
+        margin: auto;
+
+}
+#barchart1,
+#barchart2{
+   max-height: 275px;
+   margin: auto;
+}

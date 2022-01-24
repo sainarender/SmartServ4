@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>SmartServ dashboard</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="dashboa.css" media="screen" />
+    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <h4>Company Metrics</h4>
+    <div class="cards">
+        <div class="card-single">
+
+            <h1 style="color: rgb(43, 177, 43);">$406,411.29</h1>
+            <span>Total Revenue</span>
+
+        </div>
+        <div class="card-single">
+            <h1>$620</h1>
+            <span>Total Jobs Avg</span>
+        </div>
+        <div class="card-single">
+            <h1>655</h1>
+            <span>Tickets Created</span>
+        </div>
+        <div class="card-single">
+            <h1>735</h1>
+            <span>Tickets Scheduled</span>
+        </div>
+        <div class="card-single">
+            <h1 style="color: red;">$110,448.8</h1>
+            <span>Outstanding Amount</span>
+        </div>
+        <div class="card-single">
+            <h1>105</h1>
+            <span>Memberships Sold</span>
+        </div>
+        <div class="card-single">
+            <h1>436</h1>
+            <span>Jobs Completed</span>
+        </div>
+        <div class="card-single">
+            <h1>65</h1>
+            <span>Total Canceled</span>
+        </div>
+
+    </div>
+    <div class="graphs">
+       
+        <div id="barchart1" class="barchart">
+            <h1><b>Revenue By Job Location</b></h1>
+
+                <script>
+                    
+                    var chart = new ej.charts.Chart({
+                        primaryXAxis: {
+                            valueType: "Category",
+                            title: "Locations"
+                        },
+                        primaryYAxis: {
+                            title: "Revenue for November 2019"
+                        },
+                        series: [
+                            {
+                                type: "Bar",
+                                dataSource: [
+                                    { locations: "Edmonds", $: 38500 },
+                                    { locations: "Mukiteo", $: 46000 },
+                                    { locations: "Bothell", $: 47500 },
+                                    { locations: "Lynnwood", $: 49000 },
+                                    { locations: "Seattle", $: 75000 },
+                                    { locations: "Everett", $: 80000 },
+
+                                ],
+                                xName: "locations",
+                                yName: "$",
+                                fill:"green",
+                                barThickness: 199,
+                            }
+                        ]
+                        
+                    });
+                    chart.appendTo("#barchart1");
+                </script>
+        </div>
+        
+        <div id="barchart2" class="barchart"> 
+            <h1><b>Revenue By Job Location</b></h1>
+                <script>
+                    var chart = new ej.charts.Chart({
+                        primaryXAxis: {
+                            valueType: "Category",
+                            title: "Job Type"
+                        },
+                        primaryYAxis: {
+                            title: "Revenue for November 2019"
+                        },
+                        series: [
+                            {
+                                type: "Bar",
+                                dataSource: [
+                                    { jobtype: "Material Sale", $: 2000 },
+                                    { jobtype: "Maintenance", $: 40000 },
+                                    { jobtype: "HWT Replacement", $: 78500 },
+                                    { jobtype: "Service HVAC", $: 79500 },
+                                    { jobtype: "Bid Work HVAC", $: 120000 },
+                                    { jobtype: "Plumbing", $: 200000 },
+
+                                ],
+                                xName: "jobtype",
+                                yName: "$",
+                                fill:"green"
+                            }
+                        ]
+                    });
+                    chart.appendTo("#barchart2");
+                </script>
+        </div>
+    </div>
+</body>
+
+</html>

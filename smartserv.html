@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>SMARTSERV</title>
+        <link rel="shortcut icon" href="./logo.jpg" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+    </head>
+    <body>
+        <div class="a">
+            <form name="myForm" method="post" id="survey-form" >
+                    <img src="./login.PNG">
+                    <br>
+                    <br>
+                    <label class="emailBox">
+                        <input type="email" id="email" placeholder="Username">
+                        <span class="emailText"></span>
+                    </label>
+                    <label class="passBox">
+                        <input type="password" id="password" placeholder="password">
+                        <span class="passText"></span>
+                    </label>
+                    <br>
+                    <br>
+                    <input id="login" type="button" value="Login" onclick="myFunction()">
+                    <br>
+                    <br>
+                    <a href="./forgo.html" style="color: burlywood;">Forgot your password?</a>
+            </form>
+            <script>
+                const email = document.getElementById("email");
+            const password = document.getElementById("password");
+            email.addEventListener('input',()=>{
+                const emailBox = document.querySelector('.emailBox');
+                const emailText = document.querySelector('.emailText');
+                const emailPattern = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$/;
+    
+                if(email.value.match(emailPattern)){
+                    emailBox.classList.add('valid');
+                    emailBox.classList.remove('invalid');
+                    emailText.innerHTML = "Your Email Address is Valid"; 
+                }else{
+                    emailBox.classList.add('invalid');
+                    emailBox.classList.remove('valid');
+                    emailText.innerHTML = "Must be a valid email address."; 
+                }
+            });
+    
+            password.addEventListener('input',()=>{
+                const passBox = document.querySelector('.passBox');
+                const passText = document.querySelector('.passText');
+                const passPattern = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*@)/;
+                
+    
+                if(password.value.match(passPattern)){
+                    passBox.classList.add('valid');
+                    passBox.classList.remove('invalid');
+                    passText.innerHTML = "Your Password is Valid"; 
+                }
+            
+                else{
+                    passBox.classList.add('invalid');
+                    passBox.classList.remove('valid');
+                    passText.innerHTML = "Your password must contain atleast one uppercase, one lowercase, and one number and only @ symbol"; 
+                }
+            });
+           function myFunction()
+           {
+               var un=document.forms["myForm"]["email"].value;
+               var pw=document.forms["myForm"]["password"].value;
+               if(pw=="SmartServTest@123")
+               {
+                   window.location.href="dash.html";
+               }else{
+                   alert("Incorrect password!!");
+               }
+           }
+            </script>
+        </div>
+
+    </body>
+</html>

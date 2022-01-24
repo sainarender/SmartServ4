@@ -22,8 +22,11 @@ Conditions considered
 
 3) Clicking on the Forgot your password link will open an email client to send an email to support@smartserv.io for resetting the password.
 
+
 You can see my live project assignment below
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 https://sainarender.github.io/SmartServ4/
 
 This is the link for the assignment(Task-3 and Task-4)
+
+I was facing some issued when I was uploading java script file,it was not able to upload so I have written the javascript code in html itself wherever it required

@@ -1,4 +1,4 @@
-# SmartServ Technical Coding Assignment (TASK-4)
+# SmartServ Technical Coding Assignment (Task3 and TASK-4)
 
 Created a basic frontend of a login dashboard using HTML,CSS and JavaScript
 
@@ -10,4 +10,4 @@ Created a basic frontend of a login dashboard using HTML,CSS and JavaScript
 
 https://sainarender.github.io/SmartServ4/
 
-This is the link for the assignment(Task-3)
+This is the link for the assignment(Task-3 and Task-4)
